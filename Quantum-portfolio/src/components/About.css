@@ -1,0 +1,74 @@
+.about-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+.about-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #ffc107;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.education-section,
+.career-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.education-item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h6 {
+    color: #1a1a1a;
+}
+
+.education-item .text-muted {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-image {
+        max-height: 300px;
+    }
+}

@@ -1,0 +1,88 @@
+.skills-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+.skill-card {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ffc107;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.2);
+}
+
+.skill-header h5 {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.skill-progress {
+    background-color: #444;
+}
+
+.skill-progress .progress-bar {
+    background-color: #ffc107;
+}
+
+.tool-badge {
+    background-color: #2d2d2d;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid #ffc107;
+}
+
+.tool-badge:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.2);
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+.tool-badge h6 {
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

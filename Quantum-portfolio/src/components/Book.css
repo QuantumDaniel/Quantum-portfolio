@@ -1,0 +1,122 @@
+.book-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+.book-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-15px) rotateY(-5deg);
+    box-shadow: 0 30px 60px rgba(255, 193, 7, 0.2);
+}
+
+.book-cover {
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-cover {
+    transform: scale(1.02);
+}
+
+.book-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.book-highlights h5 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.book-highlights ul li {
+    color: #e9ecef;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.book-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.book-buttons .btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.book-buttons .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    transform: translateY(-3px);
+}
+
+.book-buttons .btn-outline-warning:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+}
+
+.book-meta {
+    border-color: rgba(255, 193, 7, 0.2) !important;
+}
+
+.book-meta p {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+    .book-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .book-title {
+        font-size: 1.5rem;
+    }
+
+    .book-cover {
+        height: 350px;
+    }
+
+    .book-buttons {
+        flex-direction: column;
+    }
+
+    .book-buttons .btn {
+        width: 100%;
+    }
+}
