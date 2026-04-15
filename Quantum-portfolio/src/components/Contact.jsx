@@ -87,7 +87,7 @@ export default function Contact() {
                             <div className="d-flex align-items-start mb-4">
                                 <i className="bi bi-envelope fs-4 me-3"></i>
                                 <div>
-                                    <h6 className="fw-bold">Email</h6>
+                                    <h6 className="fw-bold">iEmal</h6>
                                     <p className="text-secondary mb-0">aburorhambagadaniel@gmail.com</p>
                                 </div>
                             </div>
@@ -111,19 +111,19 @@ export default function Contact() {
                             <h5 className="mb-4 fw-bold">Follow Me</h5>
 
                             <div>
-                                <a href="https://github.com" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                <a href="https://github.com/QuantumDaniel" target="_blank" rel="noreferrer" className="me-3 fs-4">
                                     <i className="bi bi-github"></i>
                                 </a>
 
-                                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                <a href="https://www.linkedin.com/in/abur-daniel-ba01b1217" target="_blank" rel="noreferrer" className="me-3 fs-4">
                                     <i className="bi bi-linkedin"></i>
                                 </a>
 
-                                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="me-3 fs-4">
-                                    <i className="bi bi-twitter"></i>
+                                <a href="https://web.facebook.com/daniel.abur.31/directory_links" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                    <i className="bi bi-facebook"></i>
                                 </a>
 
-                                <a href="mailto:daniel@example.com" className="fs-4">
+                                <a href="mailto:aburorhambagadaniel@gmail.com" className="fs-4">
                                     <i className="bi bi-envelope-heart"></i>
                                 </a>
                             </div>
