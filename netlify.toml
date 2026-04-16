@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200g
+  status = 200
   base = "Quantum-portfolio/Quantum-portfolio"
   command = "npm run build"
   publish = "dist"
