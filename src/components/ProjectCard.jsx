@@ -13,6 +13,7 @@ export default function ProjectCard({
 
             {/* Image */}
             <img
+                loading='lazy'
                 src={image}
                 className="card-img-top project-image"
                 alt={title}
