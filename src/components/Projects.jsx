@@ -30,6 +30,8 @@ export default function Projects() {
             description:
                 'A website that teaches people how to get into into tech with just their smartphones.',
             technologies: ['React.js', 'JavaScript', 'CSS'],
+            'A task management application with features to create, edit, delete, and track tasks.',
+            technologies: ['React.js', 'JavaScript', 'CSS', 'Local Storage'],
             githubLink: 'https://github.com/QuantumDaniel/Quantum-Tech-Bridge',
             liveLink: 'https://quantum-tech-bridge.netlify.app/',
         },
