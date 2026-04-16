@@ -3,6 +3,8 @@ import './Projects.css';
 import img1 from "../assets/Quiz.PNG";
 import img2 from "../assets/portflio.PNG";
 import img3 from "../assets/Tech-bridge.PNG";
+import img4 from "../assets/weather.PNG";
+import img5 from "../assets/book.PNG";
 
 export default function Projects() {
     const projects = [
@@ -29,7 +31,7 @@ export default function Projects() {
         {
             id: 3,
             image: `${img3}`,
-            title: 'Website',
+            title: 'Quantum Tech Bridge Website',
             description:
                 'A website that teaches people how to get into into tech with just their smartphones.',
             technologies: ['React.js', 'JavaScript', 'CSS'],
@@ -39,23 +41,23 @@ export default function Projects() {
         },
         {
             id: 4,
-            image: 'https://via.placeholder.com/400x250?text=Weather+Dashboard',
+            image: `${img4}`,
             title: 'Weather Dashboard',
             description:
                 'A weather application displaying current conditions and forecasts.',
-            technologies: ['React.js', 'API', 'Bootstrap', 'JavaScript'],
-            githubLink: 'https://github.com',
-            liveLink: 'https://example.com',
+            technologies: ['API', 'Bootstrap', 'JavaScript', 'CSS3'],
+            githubLink: 'https://github.com/QuantumDaniel/weather-app/tree/main',
+            liveLink: 'https://weather-codition.netlify.app/',
         },
         {
             id: 5,
-            image: 'https://via.placeholder.com/400x250?text=Blog+Platform',
-            title: 'Blog Platform',
+            image: `${img5}`,
+            title: 'Book Website',
             description:
-                'A blogging platform allowing users to create and manage posts.',
+                'A book website showing book details with free download chapter.',
             technologies: ['React.js', 'Bootstrap', 'JavaScript', 'CSS Grid'],
-            githubLink: 'https://github.com',
-            liveLink: 'https://example.com',
+            githubLink: 'https://github.com/QuantumDaniel/Quantum-books',
+            liveLink: 'https://dont-guess-your-future.netlify.app/',
         },
         {
             id: 6,
