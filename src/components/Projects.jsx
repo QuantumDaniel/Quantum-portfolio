@@ -1,11 +1,14 @@
 import ProjectCard from './ProjectCard';
 import './Projects.css';
+import img1 from "../assets/Quiz.PNG";
+import img2 from "../assets/portflio.PNG";
+import img3 from "../assets/Tech-bridge.PNG";
 
 export default function Projects() {
     const projects = [
         {
             id: 1,
-            image: '/src/assets/Quiz.PNG',
+            image: `${img1}`,
             title: 'Maths Quiz App',
             description:
                 'A responsive Maths Quiz App built with React featuring Multiple Questions, countdown timer and instant result feedback upon submision.',
@@ -15,7 +18,7 @@ export default function Projects() {
         },
         {
             id: 2,
-            image: 'src/assets/portflio.PNG',
+            image: `${img2}`,
             title: 'Portfolio Website',
             description:
                 'A modern, fully responsive portfolio website showcasing projects and skills with smooth scrolling and interactive elements.',
@@ -25,7 +28,7 @@ export default function Projects() {
         },
         {
             id: 3,
-            image: '/src/assets/Tech-bridge.PNG',
+            image: `${img3}`,
             title: 'Website',
             description:
                 'A website that teaches people how to get into into tech with just their smartphones.',
