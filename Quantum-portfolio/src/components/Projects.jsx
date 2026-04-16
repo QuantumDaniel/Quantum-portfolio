@@ -5,33 +5,33 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
-            image: 'https://via.placeholder.com/400x250?text=E-Commerce+Platform',
-            title: 'E-Commerce Platform',
+            image: '/src/assets/Quiz.PNG',
+            title: 'Maths Quiz App',
             description:
-                'A responsive e-commerce website built with React and Bootstrap featuring product listings, shopping cart, and user authentication.',
-            technologies: ['React.js', 'Bootstrap', 'JavaScript', 'CSS'],
-            githubLink: 'https://github.com',
-            liveLink: 'https://example.com',
+                'A responsive Maths Quiz App built with React featuring Multiple Questions, countdown timer and instant result feedback upon submision.',
+            technologies: ['React.js', 'JavaScript', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/maths-game2',
+            liveLink: 'https://quantumdaniel.github.io/maths-game2/',
         },
         {
             id: 2,
-            image: 'https://via.placeholder.com/400x250?text=Portfolio+Website',
+            image: 'src/assets/portflio.PNG',
             title: 'Portfolio Website',
             description:
                 'A modern, fully responsive portfolio website showcasing projects and skills with smooth scrolling and interactive elements.',
             technologies: ['React.js', 'Bootstrap', 'CSS3', 'Responsive Design'],
-            githubLink: 'https://github.com',
+            githubLink: 'https://github.com/QuantumDaniel/Quantum-portfolio/tree/main/Quantum-portfolio',
             liveLink: 'https://example.com',
         },
         {
             id: 3,
-            image: 'https://via.placeholder.com/400x250?text=Task+Manager+App',
+            image: '/src/assets/Tech-bridge.PNG',
             title: 'Task Manager App',
             description:
-                'A task management application with features to create, edit, delete, and track tasks.',
-            technologies: ['React.js', 'JavaScript', 'CSS', 'Local Storage'],
-            githubLink: 'https://github.com',
-            liveLink: 'https://example.com',
+                'A website that teaches people how to get into into tech with just their smartphones.',
+            technologies: ['React.js', 'JavaScript', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/Quantum-Tech-Bridge',
+            liveLink: 'https://quantum-tech-bridge.netlify.app/',
         },
         {
             id: 4,
