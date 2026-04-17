@@ -5,6 +5,11 @@ import img2 from "../assets/portflio.PNG";
 import img3 from "../assets/Tech-bridge.PNG";
 import img4 from "../assets/weather.PNG";
 import img5 from "../assets/book.PNG";
+import img6 from "../assets/calculator.PNG";
+import img7 from "../assets/Quote.PNG";
+import img8 from "../assets/form.PNG";
+import img9 from "../assets/exam-calculator.PNG";
+
 
 export default function Projects() {
     const projects = [
@@ -61,13 +66,43 @@ export default function Projects() {
         },
         {
             id: 6,
-            image: 'https://via.placeholder.com/400x250?text=Calculator+App',
+            image: `${img6}`,
             title: 'Calculator App',
             description:
                 'A fully functional calculator with responsive design.',
-            technologies: ['React.js', 'JavaScript', 'CSS'],
-            githubLink: 'https://github.com',
-            liveLink: 'https://example.com',
+            technologies: ['JavaScript', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/Maths-calculator2/',
+            liveLink: 'https://quantumdaniel.github.io/Maths-calculator2/',
+        },
+        {
+            id: 7,
+            image: `${img7}`,
+            title: 'Quote Generator',
+            description:
+                'A fully functional Quote Generator with responsive design, dark mode, and copy button.',
+            technologies: ['JavaScript', 'CSS', 'Bootstrap'],
+            githubLink: 'https://github.com/QuantumDaniel/Quote-Generator/',
+            liveLink: 'https://quantumdaniel.github.io/Quote-Generator/',
+        },
+        {
+            id: 8,
+            image: `${img8}`,
+            title: 'Ultrasound Report form',
+            description:
+                'A fully functional Abdominal/pelvic Ultrasound report form with responsive design and print button.',
+            technologies: ['JavaScript', 'CSS', 'Bootstrap'],
+            githubLink: 'https://github.com/QuantumDaniel/Ultrasound-report-form/',
+            liveLink: 'https://quantumdaniel.github.io/Ultrasound-report-form/',
+        },
+        {
+            id: 9,
+            image: `${img9}`,
+            title: 'Exam Calculator',
+            description:
+                'A fully functional exam calculator with print button for calculating student grades and remark.',
+            technologies: ['JavaScript', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/exam-calculator/',
+            liveLink: 'https://quantumdaniel.github.io/exam-calculator/',
         },
     ];
 

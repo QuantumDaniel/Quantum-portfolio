@@ -72,6 +72,10 @@ const About = () => {
                                     <i className="bi bi-check-circle text-primary me-2"></i>
                                     Full-Stack Web Development
                                 </li>
+                                <li className="mb-2">
+                                    <i className="bi bi-check-circle text-primary me-2"></i>
+                                    AI/Machine Learning
+                                </li>
                             </ul>
 
                             {/* Button */}
