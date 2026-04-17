@@ -94,6 +94,7 @@
 
     .text-content {
         text-align: center;
+
     }
 
     .hero-text h1 {
@@ -102,5 +103,10 @@
 
     .profile-image {
         max-height: 350px;
+    }
+
+    div .dan {
+        margin-top: 10px !important;
+        background-color: red;
     }
 }

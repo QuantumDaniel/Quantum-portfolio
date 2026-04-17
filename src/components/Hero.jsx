@@ -8,8 +8,8 @@ export default function Hero() {
                 <div className="row align-items-center g-5">
 
                     <div className="col-lg-6 text-content">
-                        <h1 className="display-4 fw-bold mb-3">
-                            Hi, I'm <span className="text-warning">Daniel</span>
+                        <h1 className="display-4 fw-bold mb-3 mt-4 ">
+                            Hi, I'm <span className="text-warning ">Daniel</span>
                         </h1>
 
                         <h2 className="h4  mb-4">
