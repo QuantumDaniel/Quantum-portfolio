@@ -42,17 +42,20 @@ export default function Footer() {
                     <div className="col-lg-4 col-md-6 col-sm-12 footer-col">
                         <h5 className="footer-title mb-3">Follow Me</h5>
                         <div className="footer-social">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon me-3">
-                                <i className="bi bi-github fs-5"></i>
+                            <a href="https://github.com/QuantumDaniel" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                <i className="bi bi-github"></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon me-3">
-                                <i className="bi bi-linkedin fs-5"></i>
+
+                            <a href="https://www.linkedin.com/in/abur-daniel-ba01b1217" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                <i className="bi bi-linkedin"></i>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon me-3">
-                                <i className="bi bi-twitter fs-5"></i>
+
+                            <a href="https://web.facebook.com/daniel.abur.31/directory_links" target="_blank" rel="noreferrer" className="me-3 fs-4">
+                                <i className="bi bi-facebook"></i>
                             </a>
-                            <a href="mailto:daniel@example.com" className="footer-social-icon">
-                                <i className="bi bi-envelope fs-5"></i>
+
+                            <a href="mailto:aburorhambagadaniel@gmail.com" className="fs-4 text-yellow">
+                                <i className="bi bi-envelope-heart text-yellow"></i>
                             </a>
                         </div>
                     </div>
