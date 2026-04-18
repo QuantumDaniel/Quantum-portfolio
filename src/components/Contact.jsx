@@ -7,6 +7,8 @@ export default function Contact() {
         email: '',
         message: '',
     });
+    const [message, setMessage] = useState('Send Message');
+    const [mocking, SetMocking] = useState(' name');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -15,6 +17,19 @@ export default function Contact() {
             [name]: value,
         });
     };
+
+
+    const mockChange = () => {
+        setMessage('sent ✔');
+        setTimeout(() => {
+            setMessage('Send Message');
+        }, 1000);
+        formData.name = '';
+        formData.email = '';
+        formData.message = '';
+
+    }
+
 
     return (
         <section id="contact" className="contact-section py-5">
@@ -70,9 +85,9 @@ export default function Contact() {
                                 ></textarea>
                             </div>
 
-                            <button className="btn btn-warning btn-lg fw-bold w-100">
+                            <button type='button' onClick={mockChange} className="btn btn-warning btn-lg fw-bold w-100">
                                 <i className="bi bi-send me-2"></i>
-                                Send Message
+                                {message}
                             </button>
 
                         </form>
@@ -87,7 +102,7 @@ export default function Contact() {
                             <div className="d-flex align-items-start mb-4">
                                 <i className="bi bi-envelope fs-4 me-3"></i>
                                 <div>
-                                    <h6 className="fw-bold">iEmal</h6>
+                                    <h6 className="fw-bold">E-mail</h6>
                                     <p className="text-secondary mb-0">aburorhambagadaniel@gmail.com</p>
                                 </div>
                             </div>
