@@ -1,14 +1,14 @@
 import ProjectCard from './ProjectCard';
 import './Projects.css';
-import img1 from "../assets/Quiz.PNG";
-import img2 from "../assets/portflio.PNG";
-import img3 from "../assets/Tech-bridge.PNG";
-import img4 from "../assets/weather.PNG";
-import img5 from "../assets/book.PNG";
-import img6 from "../assets/calculator.PNG";
-import img7 from "../assets/Quote.PNG";
-import img8 from "../assets/form.PNG";
-import img9 from "../assets/exam-calculator.PNG";
+import img1 from "../assets-webp/Quiz.webp";
+import img2 from "../assets-webp/portflio.webp";
+import img3 from "../assets-webp/Tech-bridge.webp";
+import img4 from "../assets-webp/weather.webp";
+import img5 from "../assets-webp/book.webp";
+import img6 from "../assets-webp/calculator.webp";
+import img7 from "../assets-webp/Quote.webp";
+import img8 from "../assets-webp/form.webp";
+import img9 from "../assets-webp/exam-calculator.webp";
 
 
 export default function Projects() {

@@ -1,5 +1,5 @@
 import './Hero.css';
-import profile from '../assets/profile1.jpeg'
+import profile from '../assets-webp/profile1.webp'
 
 export default function Hero() {
     return (

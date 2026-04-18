@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import about from '../assets/profile3.jpeg'
+import about from '../assets-webp/profile3.webp'
 const About = () => {
     return (
         <section id="about" className="about-section py-5">

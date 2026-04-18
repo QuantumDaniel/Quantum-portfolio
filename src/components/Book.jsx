@@ -1,6 +1,6 @@
 
 import './Book.css';
-import coverPage from '../assets/cover2.png';
+import coverPage from '../assets-webp/cover2.webp';
 
 export default function Book() {
     return (
