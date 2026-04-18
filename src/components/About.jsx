@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import about from '../assets-webp/profile3.webp'
+import cv from '../assets/Abur_Daniel_CV_Updated.pdf';
 const About = () => {
     return (
         <section id="about" className="about-section py-5">
@@ -80,7 +81,7 @@ const About = () => {
 
                             {/* Button */}
                             <a
-                                href="https://via.placeholder.com"
+                                href={cv}
                                 download
                                 className="btn btn-primary rounded-pill mt-4 px-5 py-2"
                             >
