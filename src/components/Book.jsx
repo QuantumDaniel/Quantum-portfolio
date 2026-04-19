@@ -58,10 +58,10 @@ export default function Book() {
                                     href="https://1drv.ms/b/c/d6a759a2a54357fd/IQCAMQYrIvi2RI145QpxiulYAeqQiac0GMytI7tA3azzfgk?e=ezapO7" className="btn btn-warning btn-lg fw-bold me-3 mb-2"
                                     target='blank'
                                 >
-                                    <i className="bi bi-book me-2"></i>Read Book
+                                    <i className="bi bi-book me-2"></i>Download Full Book
                                 </a>
-                                <a href="#" className="btn btn-outline-warning btn-lg fw-bold mb-2">
-                                    <i className="bi bi-download me-2"></i>Download PDF
+                                <a href="/free_chapter_preview(1).pdf" className="btn btn-outline-warning btn-lg fw-bold mb-2" download >
+                                    <i className="bi bi-download me-2"></i>Download Free Chapter
                                 </a>
                             </div>
 
