@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import ProjectCard from './ProjectCard';
 import './Projects.css';
 import img1 from "../assets-webp/Quiz.webp";
@@ -106,6 +107,32 @@ export default function Projects() {
         },
     ];
 
+
+
+    const ref = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+
     return (
         <section id="projects" className="projects-section py-5">
             <div className="container">
@@ -119,9 +146,9 @@ export default function Projects() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="row g-4">
+                <div className={`row g-4 projects ${show ? 'show' : ''}`} ref={ref}>
                     {projects.map((project) => (
-                        <div className="col-lg-4 col-md-6 col-12" key={project.id}>
+                        <div className={`col-lg-4 col-md-6 col-12 `} key={project.id}>
                             <ProjectCard
                                 image={project.image}
                                 title={project.title}

@@ -1,8 +1,31 @@
-
+import { useState, useEffect, useRef } from 'react';
 import './Book.css';
 import coverPage from '../assets-webp/cover2.webp';
 
 export default function Book() {
+    const ref = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section id="book" className="book-section py-5">
             <div className="container">
@@ -13,7 +36,7 @@ export default function Book() {
                     </p>
                 </div>
 
-                <div className="row align-items-center g-5">
+                <div className={`row align-items-center g-5 book ${show ? 'show' : ''}`} ref={ref}>
                     <div className="col-lg-5 col-md-12 text-center">
                         <div className="book-card card shadow-lg border-0">
                             <img

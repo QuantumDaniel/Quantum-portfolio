@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import './Skills.css';
 
 export default function Skills() {
@@ -10,6 +11,28 @@ export default function Skills() {
         { name: 'Git & GitHub', percentage: 85 },
         { name: 'Responsive Design', percentage: 90 },
     ];
+    const ref = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <section id="skills" className="skills-section py-5">
@@ -24,12 +47,12 @@ export default function Skills() {
                 </div>
 
                 {/* Skills */}
-                <div className="row g-4">
+                <div className={`row g-4 skills ${show ? 'show' : ''}`} ref={ref}>
                     {skills.map((skill, index) => (
                         <div className="col-lg-6 col-md-12" key={index}>
                             <div className="skill-card p-3 shadow-sm rounded">
 
-                                <div className="d-flex justify-content-between align-items-center mb-3">
+                                <div className={`d-flex justify-content-between align-items-center mb-3`}>
                                     <h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>
                                     <span className="badge bg-warning text-dark">
                                         {skill.percentage}%

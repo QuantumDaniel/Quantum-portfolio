@@ -1,8 +1,31 @@
-import React from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './About.css';
 import about from '../assets-webp/profile3.webp'
 import cv from '../assets/Abur_Daniel_CV_Updated.pdf';
 const About = () => {
+
+    const ref = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
     return (
         <section id="about" className="about-section py-5">
             <div className="container">
@@ -12,7 +35,7 @@ const About = () => {
                 <div className="row align-items-center gy-5">
 
                     {/* Image */}
-                    <div className="col-lg-4 text-center ">
+                    <div className={`col-lg-4 text-center projects ${show ? 'show' : ''} `} ref={ref}>
                         <img
                             loading='lazy'
                             src={about}
@@ -23,7 +46,7 @@ const About = () => {
 
                     {/* Content */}
                     <div className="col-lg-8">
-                        <div className="about-content">
+                        <div className={`about-content projects ${show ? 'show' : ''} `} ref={ref} >
 
                             <h3 className="fs-4 fw-bold mb-3">
                                 Physicist | Front-End Developer | Writer | Medical Imaging Enthusiast | Aspiring Medical Physicist

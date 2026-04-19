@@ -23,6 +23,19 @@
     border-radius: 2px;
 }
 
+.projects {
+    opacity: 0;
+    transform: rotate(-180deg);
+    transition: all 0.6s ease;
+    scale: 0.9
+}
+
+.projects.show {
+    opacity: 1;
+    transform: rotate(0);
+    scale: 1;
+}
+
 @media (max-width: 768px) {
     .projects-section {
         padding: 60px 0;
