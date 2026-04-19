@@ -97,14 +97,14 @@
 
 .book {
     opacity: 0;
-    transform: rotate(-180deg);
+    transform: TranslateY(50px);
     transition: all 0.6s ease;
     scale: 0.9
 }
 
 .book.show {
     opacity: 1;
-    transform: rotate(0);
+    transform: TranslateY(0);
     scale: 1;
 }
 
