@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './About.css';
 import about from '../assets-webp/profile3.webp'
-import cv from '../assets/Abur_Daniel_CV_Updated.pdf';
+import cv from '../assets/Abur_Daniel_CV_Final.pdf';
 const About = () => {
 
     const ref = useRef(null);
