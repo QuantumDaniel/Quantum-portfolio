@@ -83,7 +83,7 @@ export default function Book() {
                                 >
                                     <i className="bi bi-book me-2"></i>Download Full Book
                                 </a>
-                                <a href="/free_chapter_preview(1).pdf" className="btn btn-outline-warning btn-lg fw-bold mb-2" download >
+                                <a href="/free_chapter_preview.pdf" className="btn btn-outline-warning btn-lg fw-bold mb-2" download >
                                     <i className="bi bi-download me-2"></i>Download Free Chapter
                                 </a>
                             </div>
