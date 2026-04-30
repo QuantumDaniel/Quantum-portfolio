@@ -10,6 +10,7 @@ import img6 from "../assets-webp/calculator.webp";
 import img7 from "../assets-webp/Quote.webp";
 import img8 from "../assets-webp/form.webp";
 import img9 from "../assets-webp/exam-calculator.webp";
+import img10 from "../assets/bulb.png";
 
 
 export default function Projects() {
@@ -104,6 +105,27 @@ export default function Projects() {
             technologies: ['JavaScript', 'CSS'],
             githubLink: 'https://github.com/QuantumDaniel/exam-calculator/',
             liveLink: 'https://quantumdaniel.github.io/exam-calculator/',
+        },
+
+        {
+            id: 9,
+            image: `${img9}`,
+            title: 'Exam Calculator',
+            description:
+                'A fully functional exam calculator with print button for calculating student grades and remark.',
+            technologies: ['JavaScript', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/exam-calculator/',
+            liveLink: 'https://quantumdaniel.github.io/exam-calculator/',
+        },
+        {
+            id: 10,
+            image: `${img10}`,
+            title: 'Light Bulb',
+            description:
+                'A light bulb that tuggles on and off.',
+            technologies: ['React', 'Bootsrap', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/light-bulb',
+            liveLink: 'https://light-bulb-jet.vercel.app/',
         },
     ];
 
