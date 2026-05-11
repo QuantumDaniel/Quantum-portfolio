@@ -78,7 +78,7 @@ export default function Book() {
 
                             <div className="book-buttons">
                                 <a
-                                    href="https://1drv.ms/b/c/d6a759a2a54357fd/IQCAMQYrIvi2RI145QpxiulYAeqQiac0GMytI7tA3azzfgk?e=ezapO7" className="btn btn-warning btn-lg fw-bold me-3 mb-2"
+                                    href="https://selar.com/7y5226h424" className="btn btn-warning btn-lg fw-bold me-3 mb-2"
                                     target='blank'
                                 >
                                     <i className="bi bi-book me-2"></i>Download Full Book
