@@ -172,7 +172,7 @@ export default function Projects() {
 
                 {/* Header */}
                 <div className="text-center mb-5">
-                    <h2 className="mb-3">My Projects</h2>
+                    <h2 className="mb-3">My Projects <h4 className="display-6 text-yellow">{`[${projects.length}]`}</h4> </h2>
                     <p className="text-secondary lead">
                         Here are some of my recent web development projects
                     </p>
