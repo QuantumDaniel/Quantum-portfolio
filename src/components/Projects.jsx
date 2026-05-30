@@ -11,6 +11,7 @@ import img7 from "../assets-webp/Quote.webp";
 import img8 from "../assets-webp/form.webp";
 import img9 from "../assets-webp/exam-calculator.webp";
 import img10 from "../assets/bulb.png";
+import img11 from "../assets/hospital-website.PNG";
 
 
 export default function Projects() {
@@ -126,6 +127,16 @@ export default function Projects() {
             technologies: ['React', 'Bootsrap', 'CSS'],
             githubLink: 'https://github.com/QuantumDaniel/light-bulb',
             liveLink: 'https://light-bulb-jet.vercel.app/',
+        },
+        {
+            id: 11,
+            image: `${img11}`,
+            title: 'Hospital website',
+            description:
+                'A hospital website with book appointment, hospital card,chart bot and responsive design, .',
+            technologies: ['React', 'Bootsrap', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/Quantum-hospital',
+            liveLink: 'https://quantum-hospital.vercel.app/',
         },
     ];
 
