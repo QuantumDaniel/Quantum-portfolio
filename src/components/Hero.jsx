@@ -1,5 +1,6 @@
 import './Hero.css';
 import profile from '../assets-webp/profile1.webp'
+import TypingEffect from "./TypingEffect";
 
 export default function Hero() {
     return (
@@ -13,7 +14,7 @@ export default function Hero() {
                         </h1>
 
                         <h2 className="h4  mb-4">
-                            Physicist | Front-End Developer | Writer | Medical Imaging Enthusiast | Aspiring Medical Physicist
+                              <TypingEffect />
                         </h2>
 
                         <p className="lead text-secondary mb-4">
