@@ -8,6 +8,7 @@ import OtherSkills from '../components/OtherSkills';
 import Book from '../components/Book';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import TopButton from '../components/TopButton';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Projects />
             <Experience />
             <OtherSkills />
+            <TopButton />
             <Book />
             <Contact />
             <Footer />
