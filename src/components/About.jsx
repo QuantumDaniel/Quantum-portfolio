@@ -48,16 +48,14 @@ const About = () => {
                     <div className="col-lg-8">
                         <div className={`about-content projects ${show ? 'show' : ''} `} ref={ref} >
 
-                            <p className="lead mb-3">
-                                I'm a dedicated front-end developer with a passion for creating intuitive
-                                and responsive web experiences. My journey in technology is complemented by
-                                a unique background in medical imaging and research writing.
+                            <p className=" mb-3">
+                              I’m a dedicated front-end developer passionate about building intuitive, responsive web experiences, with a background in medical imaging and research writing that complements my tech journey.
+
                             </p>
 
                             <p className="mb-4">
-                                With expertise in React.js, Bootstrap, and modern web technologies, I build
-                                scalable applications that solve real-world problems. Beyond coding, I'm
-                                passionate about content writing, medical imaging analysis, and graphic design.
+                                I specialize in React.js, Bootstrap, and modern web technologies to build scalable, real-world applications, and I’m also passionate about content writing, medical imaging analysis, and graphic design.
+
                             </p>
 
                             {/* Education */}
@@ -67,6 +65,21 @@ const About = () => {
                                 <p className="mb-1">
                                     <strong>Bachelor's Degree in Physics</strong>
                                 </p>
+                                 <p className="mb-0">
+                                    [Bachelor’s degree in Physics with a strong foundation in analytical thinking, problem-solving, and applied science, with exposure to medical imaging and research.
+]
+                                </p>
+
+                                 <div className="mb-3 pb-3 border-bottom">
+                                <p className="mb-1">
+                                    <strong>Software Engnineering</strong>
+                                </p>
+                                 <p className="mb-0">
+                                    [Software Engineering with a focus on front-end development, building responsive and user-friendly interfaces using modern web technologies such as React.js, HTML, CSS, JavaScript, and Bootstrap.
+]
+                                </p>
+                                </div>
+                            
                             </div>
 
                             {/* Career Interests */}
@@ -76,7 +89,7 @@ const About = () => {
                             <a
                                 href={cv}
                                 download
-                                className="btn btn-primary rounded-pill mt-4 px-5 py-2"
+                                className="btn btn-warning rounded-pill mt-4 px-5 py-2"
                             >
                                 <i className="bi bi-download me-2"></i>
                                 Download CV
