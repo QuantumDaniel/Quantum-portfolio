@@ -48,10 +48,6 @@ const About = () => {
                     <div className="col-lg-8">
                         <div className={`about-content projects ${show ? 'show' : ''} `} ref={ref} >
 
-                            <h3 className="fs-4 fw-bold mb-3">
-                                Physicist | Front-End Developer | Writer | Medical Imaging Enthusiast | Aspiring Medical Physicist
-                            </h3>
-
                             <p className="lead mb-3">
                                 I'm a dedicated front-end developer with a passion for creating intuitive
                                 and responsive web experiences. My journey in technology is complemented by
@@ -71,36 +67,10 @@ const About = () => {
                                 <p className="mb-1">
                                     <strong>Bachelor's Degree in Physics</strong>
                                 </p>
-                                <p className="text-muted mb-0">
-                                    Expected Graduation: [2023]
-                                </p>
                             </div>
 
                             {/* Career Interests */}
-                            <h4 className="fw-bold mt-4 mb-3">Career Interests</h4>
 
-                            <ul className="list-unstyled">
-                                <li className="mb-2">
-                                    <i className="bi bi-check-circle text-primary me-2"></i>
-                                    Front-End Development
-                                </li>
-                                <li className="mb-2">
-                                    <i className="bi bi-check-circle text-primary me-2"></i>
-                                    Content Writing
-                                </li>
-                                <li className="mb-2">
-                                    <i className="bi bi-check-circle text-primary me-2"></i>
-                                    Medical Imaging & Healthcare Technology
-                                </li>
-                                <li className="mb-2">
-                                    <i className="bi bi-check-circle text-primary me-2"></i>
-                                    Full-Stack Web Development
-                                </li>
-                                <li className="mb-2">
-                                    <i className="bi bi-check-circle text-primary me-2"></i>
-                                    AI/Machine Learning
-                                </li>
-                            </ul>
 
                             {/* Button */}
                             <a
