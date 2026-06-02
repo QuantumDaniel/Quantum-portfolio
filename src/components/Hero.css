@@ -40,6 +40,11 @@
     box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
 }
 
+.lead{
+    text-align:justify;
+}
+
+
 @keyframes fadeInDown {
     from {
         opacity: 0;

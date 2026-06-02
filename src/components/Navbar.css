@@ -59,6 +59,12 @@
     text-decoration-thickness: 3px !important;
 
 }
+.rubik-distressed-regular {
+  font-family: "Rubik Distressed", system-ui !important ;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
 @media (max-width: 991px) {

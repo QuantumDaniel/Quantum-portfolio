@@ -19,14 +19,14 @@ export default function NavbarComponent() {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom header ${scrolled ? "scrolled" : ""}`}>
             <div className="container">
-                <a className="navbar-brand fw-bold text-warning" href="#home">
-                    <span className="brand-icon">{'<'}</span>
-                    QUANTUM
+                <a className="navbar-brand fw-bold text-warning rubik-distressed-regular" href="#home">
+                    <span className="brand-icon ">{'<'}</span>
+                    Q
                     <span className="brand-icon">{'/>'}</span>
                 </a>
 
                 <button
-                    className="navbar-toggler"
+                    className="navbar-toggler" 
                     type="button"
                     onClick={toggleNav}
                     aria-controls="navbarNav"
