@@ -98,8 +98,9 @@ export default function Contact() {
                         <div className="contact-info">
 
                             <h4 className="mb-4 fw-bold">Other Ways to Connect</h4>
-
-                            <div className="d-flex align-items-start mb-4">
+                            <h2>Abur Orhembaga Daniel [<i>Quantum</i>]</h2>
+                            {/*
+                             <div className="d-flex align-items-start mb-4">
                                 <i className="bi bi-envelope fs-4 me-3"></i>
                                 <div>
                                     <h6 className="fw-bold">E-mail</h6>
@@ -122,7 +123,8 @@ export default function Contact() {
                                     <p className="text-secondary mb-0">+2349042898107</p>
                                 </div>
                             </div>
-
+                            */
+                            }
                             <h5 className="mb-4 fw-bold">Follow Me</h5>
 
                             <div>
