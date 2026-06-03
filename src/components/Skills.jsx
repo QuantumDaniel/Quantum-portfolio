@@ -54,19 +54,21 @@ export default function Skills() {
 
                                 <div className={`d-flex justify-content-between align-items-center mb-3`}>
                                     <h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>
-                                    <span className="badge bg-warning text-dark">
+                                    {/*<span className="badge bg-warning text-dark">
                                         {skill.percentage}%
                                     </span>
                                 </div>
 
-                                {/* Progress Bar */}
-                                <div className="progress" style={{ height: '8px' }}>
+                                /* Progress Bar */
+                                /*<div className="progress" style={{ height: '8px' }}>
                                     <div
                                         className="progress-bar bg-warning"
                                         role="progressbar"
                                         style={{ width: `${skill.percentage}%` }}
                                     ></div>
+                                     */}
                                 </div>
+
 
                             </div>
                         </div>
