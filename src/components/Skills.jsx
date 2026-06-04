@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import { JavaScript, CSS3, React, GitHubDark, Bootstrap5, HTML5 } from 'developer-icons';
-//import * as Icons from "developer-icons"
+import { JavaScript, CSS3, React, GitHubDark, Bootstrap5, HTML5, Git, VisualStudioCode, Chrome, Bash, DeveloperIcons } from 'developer-icons';
+import { FaCode } from "react-icons/fa";
+import * as Icons from "developer-icons"
 
-//console.log(Icons);
+console.log(Icons);
 
 import './Skills.css';
 
@@ -56,7 +57,7 @@ export default function Skills() {
                         const Icon = skill.icon;
                         return (
 
-                            <div className="col-lg-4 col-md-6" key={index}>
+                            <div className="col-lg-2 col-md-2 col-4" key={index}>
                                 <div className="skill-card p-3 shadow-sm rounded-4 w-90 ">
 
                                     <div className={`d-flex align-items-center mb-3`} title={skill.name}>
@@ -94,29 +95,30 @@ export default function Skills() {
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
-                            <i className="bi bi-browser-chrome fs-2 mb-2"></i>
-                            <h6>Chrome DevTools</h6>
+                            {/*<i className="bi bi-browser-chrome fs-2 mb-2"></i>*/}
+                            <Chrome className="fs-2 mb-2" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
-                            <i className="bi bi-file-earmark-code fs-2 mb-2"></i>
-                            <h6>VS Code</h6>
+                            {/*<i className="bi bi-file-earmark-code fs-2 mb-2"></i>*/}
+                            <VisualStudioCode className="fs-2 mb-2" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
-                            <i className="bi bi-terminal fs-2 mb-2"></i>
-                            <h6>Terminal</h6>
+                            {/*<i className="bi bi-code fs-2 mb-2"></i>*/}
+                            <DeveloperIcons className="fs-2 mb-2" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
-                            <i className="bi bi-git fs-2 mb-2"></i>
-                            <h6>Git</h6>
+                            {/*  <i className="bi bi-git fs-2 mb-2"></i>*/}
+                            <Git className="fs-2 mb-2" />
+
                         </div>
                     </div>
 
