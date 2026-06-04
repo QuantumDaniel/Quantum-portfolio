@@ -56,7 +56,7 @@ export default function OtherSkills() {
                 {/* Skills Grid */}
                 <div className="row g-4">
                     {skills.map((skill) => (
-                        <div className="col-lg-4 col-md-6 col-12" key={skill.id}>
+                        <div className="col-lg-4 col-md-6 col-12 " key={skill.id}>
 
                             <div className="card h-100 shadow-sm border-0 text-center p-4 skill-card">
 
