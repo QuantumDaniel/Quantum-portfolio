@@ -1,15 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
+import { JavaScript, CSS3, React, GitHubDark, Bootstrap5, HTML5 } from 'developer-icons';
+//import * as Icons from "developer-icons"
+
+//console.log(Icons);
+
 import './Skills.css';
 
 export default function Skills() {
     const skills = [
-        { name: 'HTML', percentage: 95 },
-        { name: 'CSS', percentage: 90 },
-        { name: 'JavaScript', percentage: 85 },
-        { name: 'React.js', percentage: 70 },
-        { name: 'Bootstrap', percentage: 92 },
-        { name: 'Git & GitHub', percentage: 85 },
-        { name: 'Responsive Design', percentage: 90 },
+        { name: 'HTML5', percentage: 95, icon: HTML5 },
+        { name: 'CSS', percentage: 90, icon: CSS3 },
+        { name: 'JavaScript', percentage: 85, icon: JavaScript },
+        { name: 'React.js', percentage: 70, icon: React },
+        { name: 'Bootstrap', percentage: 92, icon: Bootstrap5 },
+        { name: 'Git & GitHub', percentage: 85, icon: GitHubDark }
     ];
     const ref = useRef(null);
     const [show, setShow] = useState(false);
@@ -48,13 +52,18 @@ export default function Skills() {
 
                 {/* Skills */}
                 <div className={`row g-4 skills ${show ? 'show' : ''}`} ref={ref}>
-                    {skills.map((skill, index) => (
-                        <div className="col-lg-6 col-md-12" key={index}>
-                            <div className="skill-card p-3 shadow-sm rounded">
+                    {skills.map((skill, index) => {
+                        const Icon = skill.icon;
+                        return (
 
-                                <div className={`d-flex justify-content-between align-items-center mb-3`}>
-                                    <h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>
-                                    {/*<span className="badge bg-warning text-dark">
+                            <div className="col-lg-4 col-md-6" key={index}>
+                                <div className="skill-card p-3 shadow-sm rounded-4 w-90 ">
+
+                                    <div className={`d-flex align-items-center mb-3`} title={skill.name}>
+                                        {/*<h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>*/}
+                                        <Icon className="fs-1 text-primary mb-0 " title={skill.name} />
+
+                                        {/*<span className="badge bg-warning text-dark">
                                         {skill.percentage}%
                                     </span>
                                 </div>
@@ -67,12 +76,13 @@ export default function Skills() {
                                         style={{ width: `${skill.percentage}%` }}
                                     ></div>
                                      */}
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
 
                 {/* Tools */}
