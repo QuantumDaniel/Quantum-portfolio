@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { JavaScript, CSS3, React, GitHubDark, Bootstrap5, HTML5, Git, VisualStudioCode, Chrome, Bash, DeveloperIcons } from 'developer-icons';
+import { JavaScript, CSS3, React, GitHubDark, Bootstrap5, HTML5, Git, VisualStudioCode, Chrome, Bash, DeveloperIcons, Microsoft } from 'developer-icons';
 import { FaCode } from "react-icons/fa";
 import * as Icons from "developer-icons"
 
