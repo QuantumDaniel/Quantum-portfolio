@@ -30,9 +30,20 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid #ffc107;
-    width: 30%;
+    width: 50% !important;
     margin: 0 auto;
 
+}
+
+.icons {
+    width: 100%;
+    height: auto;
+
+}
+
+.icon {
+    width: 20%;
+    height: auto;
 }
 
 .skill-card:hover {

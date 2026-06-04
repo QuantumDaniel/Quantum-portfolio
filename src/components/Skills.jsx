@@ -57,12 +57,12 @@ export default function Skills() {
                         const Icon = skill.icon;
                         return (
 
-                            <div className="col-lg-2 col-md-2 col-4" key={index}>
+                            <div className="col-lg-2 col-md-4 col-6" key={index}>
                                 <div className="skill-card p-3 shadow-sm rounded-4 w-90 ">
 
                                     <div className={`d-flex align-items-center mb-3`} title={skill.name}>
                                         {/*<h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>*/}
-                                        <Icon className="fs-1 text-primary mb-0 " title={skill.name} />
+                                        <Icon className="fs-1 text-primary mb-0 icons " title={skill.name} />
 
                                         {/*<span className="badge bg-warning text-dark">
                                         {skill.percentage}%
@@ -96,28 +96,28 @@ export default function Skills() {
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
                             {/*<i className="bi bi-browser-chrome fs-2 mb-2"></i>*/}
-                            <Chrome className="fs-2 mb-2" />
+                            <Chrome className="fs-2 mb-2 icon" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
                             {/*<i className="bi bi-file-earmark-code fs-2 mb-2"></i>*/}
-                            <VisualStudioCode className="fs-2 mb-2" />
+                            <VisualStudioCode className="fs-2 mb-2 icon" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
                             {/*<i className="bi bi-code fs-2 mb-2"></i>*/}
-                            <DeveloperIcons className="fs-2 mb-2" />
+                            <DeveloperIcons className="fs-2 mb-2 icon" />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="tool-badge text-center p-3 shadow-sm rounded">
                             {/*  <i className="bi bi-git fs-2 mb-2"></i>*/}
-                            <Git className="fs-2 mb-2" />
+                            <Git className="fs-2 mb-2 icon" />
 
                         </div>
                     </div>
