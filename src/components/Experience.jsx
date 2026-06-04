@@ -35,6 +35,14 @@ export default function Experience() {
                 'Keen interest in medical physics, radiation safety, and diagnostic imaging principles.',
             details: ['Radiation Physics', 'Safety Standards', 'Image Physics', 'Dosimetry'],
         },
+        {
+            id: 5,
+            icon: 'bi-clipboard-data',
+            title: 'ValuBeam company limited',
+            description:
+                'Experience in front-end web development, creating responsive and user-friendly interfaces.',
+            details: ['HTML/CSS', 'JavaScript', 'React', 'Responsive Design', 'Version Control'],
+        }
     ];
 
     return (
@@ -43,10 +51,7 @@ export default function Experience() {
 
                 {/* Header */}
                 <div className="text-center mb-5">
-                    <h2 className="mb-3">Professional Experience</h2>
-                    <p className="text-secondary lead">
-                        My journey in medical imaging and related fields
-                    </p>
+                    <h2 className="mb-3">Experience</h2>
                 </div>
 
                 {/* Experience Cards */}
