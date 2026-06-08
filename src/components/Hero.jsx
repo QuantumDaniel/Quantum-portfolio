@@ -14,7 +14,7 @@ export default function Hero() {
                         </h1>
 
                         <h2 className="h4  mb-4">
-                              <TypingEffect />
+                            <TypingEffect />
                         </h2>
 
                         <p className="lead text-secondary mb-4">
@@ -31,7 +31,7 @@ export default function Hero() {
                         </a>
                     </div>
 
-                    <div className="col-lg-6 text-center">
+                    <div className="col-lg-6 text-center image-container">
                         <img
                             loading='lazy'
                             src={profile}

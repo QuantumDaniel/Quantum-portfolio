@@ -27,8 +27,12 @@
 .profile-image {
     border: 5px solid #ffc107;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: cover;
+}
+
+.image-container {
+    margin-top: 7% !important;
 }
 
 .profile-image-wrapper {
@@ -40,8 +44,8 @@
     box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
 }
 
-.lead{
-    text-align:justify;
+.lead {
+    text-align: justify;
 }
 
 

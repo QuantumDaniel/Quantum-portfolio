@@ -58,11 +58,10 @@ export default function Skills() {
                         return (
 
                             <div className="col-lg-2 col-md-4 col-6" key={index}>
-                                <div className="skill-card p-3 shadow-sm rounded-4 w-90 ">
-
+                                <div className="skill-cards p-3 shadow-sm rounded-4 ">
                                     <div className={`d-flex align-items-center mb-3`} title={skill.name}>
                                         {/*<h5 className="mb-0 fw-bold text-dark">{skill.name}</h5>*/}
-                                        <Icon className="fs-1 text-primary mb-0 icons " title={skill.name} />
+                                        <Icon className=" text-primary mb-0 icons " title={skill.name} />
 
                                         {/*<span className="badge bg-warning text-dark">
                                         {skill.percentage}%

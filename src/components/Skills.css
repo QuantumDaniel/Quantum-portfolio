@@ -23,21 +23,21 @@
     border-radius: 2px;
 }
 
-.skill-card {
-    background-color: #2d2d2d;
-    padding: 20px;
+.skill-cards {
+    background-color: #ece2e2;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid #ffc107;
-    width: 50% !important;
+    max-width: 60% !important;
+    height: auto;
     margin: 0 auto;
-
 }
 
 .icons {
     width: 100%;
     height: auto;
+
 
 }
 

@@ -59,17 +59,27 @@
     text-decoration-thickness: 3px !important;
 
 }
+
 .rubik-distressed-regular {
-  font-family: "Rubik Distressed", system-ui !important ;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Rubik Distressed", system-ui !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.img {
+    width: 60px;
+    height: auto;
+    border-radius: 35px;
+}
 
 
 @media (max-width: 991px) {
     .navbar-custom .nav-link {
         margin-left: 0;
         padding: 0.5rem 0;
+    }
+
+    .img {
+        width: 45px;
     }
 }

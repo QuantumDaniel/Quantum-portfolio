@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from '../assets/Logo.jpeg';
 
 export default function NavbarComponent() {
     const [expanded, setExpanded] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("");
+
 
     const closeNav = () => setExpanded(false);
     const toggleNav = () => setExpanded(prev => !prev);
@@ -20,13 +22,13 @@ export default function NavbarComponent() {
         <nav className={`navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom header ${scrolled ? "scrolled" : ""}`}>
             <div className="container">
                 <a className="navbar-brand fw-bold text-warning rubik-distressed-regular" href="#home">
-                    <span className="brand-icon ">{'<'}</span>
-                    Q
-                    <span className="brand-icon">{'/>'}</span>
+                    <span className="brand-icon ">
+                        <img className='img img-fluid' src={logo} alt="logo" title='Quantum' />
+                    </span>
                 </a>
 
                 <button
-                    className="navbar-toggler" 
+                    className="navbar-toggler"
                     type="button"
                     onClick={toggleNav}
                     aria-controls="navbarNav"
