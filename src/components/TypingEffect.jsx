@@ -12,7 +12,7 @@ const TypingEffect = () => {
                 "Front-End Developer |",
                 " Writer |",
                 "Medical Imaging Enthusiast |",
-                "  Aspiring Medical Physicist"
+                " Aspiring Medical Physicist"
             ],
             typeSpeed: 60,
             backSpeed: 40,
