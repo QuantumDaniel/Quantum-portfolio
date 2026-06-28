@@ -13,6 +13,7 @@ import img9 from "../assets-webp/exam-calculator.webp";
 import img10 from "../assets/bulb.png";
 import img11 from "../assets/hospital-website.PNG";
 import img12 from "../assets/Ecommerce2.png.jpeg";
+import img13 from "../assets/receipt2.PNG";
 
 export default function Projects() {
     const projects = [
@@ -141,12 +142,22 @@ export default function Projects() {
         {
             id: 12,
             image: `${img12}`,
-            title: 'Hospital website',
+            title: 'Ecommerce website',
             description:
                 'An Ecommerce website with Cart, Order section and Local storage, .',
             technologies: ['React', 'Bootsrap', 'CSS'],
             githubLink: 'https://github.com/QuantumDaniel/quantum-ecommerce',
             liveLink: 'https://quantum-ecommerce-vocu.vercel.app/',
+        },
+        {
+            id: 13,
+            image: `${img13}`,
+            title: 'Receipt',
+            description:
+                'An Ecommerce receipt , .',
+            technologies: ['JavaScript', 'Bootsrap', 'CSS'],
+            githubLink: 'https://github.com/QuantumDaniel/Receipt',
+
         },
     ];
 
